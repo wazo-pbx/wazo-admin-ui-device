@@ -1,0 +1,2 @@
+recursive-include device/templates *
+recursive-include device/static *
