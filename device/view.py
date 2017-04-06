@@ -9,7 +9,7 @@ from wazo_admin_ui.helpers.classful import LoginRequiredView
 from wazo_admin_ui.helpers.classful import extract_select2_params, build_select2_response
 
 
-class DeviceDestinationView(LoginRequiredView):
+class DeviceListingView(LoginRequiredView):
 
     def list_json(self):
         params = extract_select2_params(request.args)

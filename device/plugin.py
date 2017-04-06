@@ -6,7 +6,7 @@ from wazo_admin_ui.helpers.plugin import create_blueprint
 from wazo_admin_ui.helpers.destination import register_listing_url
 
 from .service import DeviceService
-from .view import DeviceDestinationView
+from .view import DeviceListingView
 
 device = create_blueprint('device', __name__)
 
@@ -17,9 +17,9 @@ class Plugin(object):
         core = dependencies['flask']
         config = dependencies['config']
 
-        DeviceDestinationView.service = DeviceService(config['confd'])
-        DeviceDestinationView.register(device, route_base='/devices_listing')
+        DeviceListingView.service = DeviceService(config['confd'])
+        DeviceListingView.register(device, route_base='/devices_listing')
 
-        register_listing_url('device', 'device.DeviceDestinationView:list_json')
+        register_listing_url('device', 'device.DeviceListingView:list_json')
 
         core.register_blueprint(device)
