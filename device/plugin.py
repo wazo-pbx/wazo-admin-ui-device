@@ -20,6 +20,6 @@ class Plugin(object):
         DeviceDestinationView.service = DeviceService(config['confd'])
         DeviceDestinationView.register(device, route_base='/devices_listing')
 
-        register_listing_url('device_by_mac', 'device.DeviceDestinationView:list_json_by_mac')
+        register_listing_url('device', 'device.DeviceDestinationView:list_json')
 
         core.register_blueprint(device)

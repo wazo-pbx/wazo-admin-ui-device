@@ -9,7 +9,7 @@ from wazo_admin_ui.helpers.classful import BaseDestinationView
 
 class DeviceDestinationView(BaseDestinationView):
 
-    def list_json_by_mac(self):
+    def list_json(self):
         params = self._extract_params()
         devices = self.service.list(**params)
         results = [{'id': device['id'], 'text': device['mac']} for device in devices['items']]
