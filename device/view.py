@@ -4,13 +4,15 @@
 
 from __future__ import unicode_literals
 
-from wazo_admin_ui.helpers.classful import BaseDestinationView
+from flask import jsonify, request
+from wazo_admin_ui.helpers.classful import LoginRequiredView
+from wazo_admin_ui.helpers.classful import extract_select2_params, build_select2_response
 
 
-class DeviceDestinationView(BaseDestinationView):
+class DeviceDestinationView(LoginRequiredView):
 
     def list_json(self):
-        params = self._extract_params()
+        params = extract_select2_params(request.args)
         devices = self.service.list(**params)
         results = [{'id': device['id'], 'text': device['mac']} for device in devices['items']]
-        return self._select2_response(results, devices['total'], params)
+        return jsonify(build_select2_response(results, devices['total'], params))
