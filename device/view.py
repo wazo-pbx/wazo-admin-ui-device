@@ -13,5 +13,5 @@ class DeviceDestinationView(BaseDestinationView):
         params = self._extract_params()
         params['type'] = type_
         devices = self.service.list(**params)
-        results = [{'id': device['id'], 'text': device['name']} for device in devices['items']]
+        results = [{'id': device['id'], 'text': device['mac']} for device in devices['items']]
         return self._select2_response(results, devices['total'], params)
