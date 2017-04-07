@@ -15,9 +15,8 @@ class Plugin(object):
 
     def load(self, dependencies):
         core = dependencies['flask']
-        config = dependencies['config']
 
-        DeviceListingView.service = DeviceService(config['confd'])
+        DeviceListingView.service = DeviceService()
         DeviceListingView.register(device, route_base='/devices_listing')
 
         register_listing_url('device', 'device.DeviceListingView:list_json')
