@@ -7,5 +7,4 @@ from wazo_admin_ui.helpers.service import BaseConfdService
 
 class DeviceService(BaseConfdService):
 
-    resource_name = 'device'
     resource_confd = 'devices'
