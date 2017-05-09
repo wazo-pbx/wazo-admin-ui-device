@@ -23,7 +23,7 @@ setup(
 
     entry_points={
         'wazo_admin_ui.plugins': [
-            'device = device.plugin:Plugin',
+            'device = wazo_plugind_admin_ui_device_official.plugin:Plugin',
         ]
     }
 )
