@@ -1,10 +1,10 @@
+plugin_format_version: 2
 name: admin-ui-device
 namespace: official
 version: 1.0.1-2
 author: Wazo Team
 display_name: Devices
-min_wazo_version: 18.01
+min_wazo_version: 18.02
 tags:
-  - beta
   - internal
 homepage: https://github.com/wazo-pbx/wazo-admin-ui-device
