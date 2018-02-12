@@ -19,7 +19,7 @@ class DeviceOptionsForm(BaseForm):
 
 
 class DeviceForm(BaseForm):
-    # template_id = StringField(l_('Template'))
+    # template_id = StringField(l_('Template')) # TODO to implemented
     ip = StringField(l_('IP'), validators=[IPAddress()])
     mac = StringField(l_('MAC'), validators=[MacAddress()])
     model = StringField(l_('Model'))
