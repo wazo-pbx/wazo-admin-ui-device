@@ -32,7 +32,7 @@ class DeviceView(BaseView):
             self._flash_http_error(error)
             return self._redirect_for('index')
 
-        flash(_('%(resource)s: Resource has been reseted to autoprov', resource=self.resource), 'success')
+        flash(_('%(resource)s: Resource has been reset to autoprov', resource=self.resource), 'success')
         return self._redirect_for('index')
 
     def synchronize(self, id):
