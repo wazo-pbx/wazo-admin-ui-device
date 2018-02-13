@@ -27,7 +27,11 @@ class DeviceForm(BaseForm):
     vendor = StringField(l_('Vendor'))
     version = StringField(l_('Version'))
     sn = StringField(l_('Serial Number'))
-    status = SelectField(l_('Status'), choices=[('autoprov', l_('Autoprov')), ('configured', l_('Configured')), ('not_configured', l_('Not configured'))])
+    status = SelectField(l_('Status'), choices=[
+        ('autoprov', l_('Autoprov')),
+        ('configured', l_('Configured')),
+        ('not_configured', l_('Not configured')),
+    ])
     options = FormField(DeviceOptionsForm)
     description = StringField(l_('Description'))
     submit = SubmitField()
