@@ -8,7 +8,6 @@ from flask import (
     flash
 )
 from flask_babel import lazy_gettext as l_
-from flask_classful import route
 from flask_menu.classy import classy_menu_item
 from requests.exceptions import HTTPError
 
@@ -26,7 +25,6 @@ class DeviceView(BaseView):
     def index(self):
         return super().index()
 
-    @route('/autoprov/<id>')
     def autoprov(self, id):
         try:
             self.service.autoprov(id)
@@ -37,7 +35,6 @@ class DeviceView(BaseView):
         flash(_('%(resource)s: Resource has been reseted to autoprov', resource=self.resource), 'success')
         return self._redirect_for('index')
 
-    @route('/synchronize/<id>')
     def synchronize(self, id):
         try:
             self.service.synchronize(id)
