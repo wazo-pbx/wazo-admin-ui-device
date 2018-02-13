@@ -36,7 +36,7 @@
           <td>{{ device.plugin or '-' }}</td>
           <td>{{ device.vendor or '-' }}</td>
           <td>{{ device.version or '-' }}</td>
-          <td>
+          <td id="data-column-actions">
             <a href="{{ url_for('.DeviceView:synchronize', id=device['id']) }}"
                      id="link-synchronize-device"
                      title="{{ _('Synchronize device') }}"
