@@ -38,6 +38,7 @@
           <td>{{ device.version or '-' }}</td>
           <td>
             <a href="{{ url_for('.DeviceView:synchronize', id=device['id']) }}"
+                     id="link-synchronize-device"
                      title="{{ _('Synchronize device') }}"
                      data-toggle="confirmation"
                      data-title="{{ _('Are you sure you want to synchronize this device ?') }}"
@@ -73,3 +74,7 @@
   </section>
 {% endblock %}
 
+
+{% block additional_js %}
+  <script src="{{ url_for('.static', filename='js/device.js') }}"></script>
+{% endblock %}
