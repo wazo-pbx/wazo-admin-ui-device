@@ -26,7 +26,6 @@ class DeviceForm(BaseForm):
     plugin = StringField(l_('Plugin'))
     vendor = StringField(l_('Vendor'))
     version = StringField(l_('Version'))
-    sn = StringField(l_('Serial Number'))
     status = SelectField(l_('Status'), choices=[
         ('autoprov', l_('Autoprov')),
         ('configured', l_('Configured')),

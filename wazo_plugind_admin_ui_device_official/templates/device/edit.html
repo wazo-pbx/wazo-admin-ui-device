@@ -11,7 +11,6 @@
         {% call add_default_fields(form=form, submit_value=_('Update')) %}
           {{ render_field(form.ip) }}
           {{ render_field(form.mac, readonly='readonly') }}
-          {{ render_field(form.sn) }}
           {{ render_field(form.plugin, readonly='readonly') }}
           {{ render_field(form.model, readonly='readonly') }}
           {{ render_field(form.vendor, readonly='readonly') }}
