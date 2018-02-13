@@ -18,4 +18,10 @@ $(document).ready(function() {
       }
     }
   });
+  $('#link-synchronize-device').mouseover(function () {
+    $(this).attr('title', $(this).data('original-title'));
+  });
+  $('#link-reset-device').mouseover(function () {
+    $(this).attr('title', $(this).data('original-title'));
+  });
 });

@@ -46,6 +46,7 @@
               <i class="fa fa-fw fa-arrows-h"></i>
             </a>
             <a href="{{ url_for('.DeviceView:autoprov', id=device['id']) }}"
+                     id="link-reset-device"
                      title="{{ _('Reset device to autoprov mode') }}"
                      data-toggle="confirmation"
                      data-title="{{ _('Are you sure you want to reset this device ?') }}"
