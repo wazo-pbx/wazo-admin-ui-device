@@ -1,13 +1,15 @@
 # Copyright 2017-2018 The Wazo Authors  (see the AUTHORS file)
 # SPDX-License-Identifier: GPL-3.0+
 
-from flask_babel import gettext as _
 from flask import (
     jsonify,
     request,
     flash
 )
-from flask_babel import lazy_gettext as l_
+from flask_babel import (
+    gettext as _,
+    lazy_gettext as l_
+)
 from flask_menu.classy import classy_menu_item
 from requests.exceptions import HTTPError
 
@@ -25,9 +27,9 @@ class DeviceView(BaseView):
     def index(self):
         return super().index()
 
-    def autoprov(self, id):
+    def autoprov(self, device_id):
         try:
-            self.service.autoprov(id)
+            self.service.autoprov(device_id)
         except HTTPError as error:
             self._flash_http_error(error)
             return self._redirect_for('index')
@@ -35,9 +37,9 @@ class DeviceView(BaseView):
         flash(_('%(resource)s: Resource has been reset to autoprov', resource=self.resource), 'success')
         return self._redirect_for('index')
 
-    def synchronize(self, id):
+    def synchronize(self, device_id):
         try:
-            self.service.synchronize(id)
+            self.service.synchronize(device_id)
         except HTTPError as error:
             self._flash_http_error(error)
             return self._redirect_for('index')
