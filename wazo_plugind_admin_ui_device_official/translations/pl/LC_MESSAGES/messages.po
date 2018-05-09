@@ -4,12 +4,15 @@
 # wazo_admin_ui_device project.
 # Wazo Dev Team <dev@wazo.community>, 2018.
 # 
+# Translators:
+# Ania P., 2018
 msgid ""
 msgstr ""
 "Project-Id-Version: wazo_admin_ui_device 0.1\n"
 "Report-Msgid-Bugs-To: 'dev@wazo.community'\n"
 "POT-Creation-Date: 2018-02-27 13:42-0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Ania P., 2018\n"
 "Language-Team: Polish (https://www.transifex.com/wazo/teams/69545/pl/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
@@ -20,115 +23,115 @@ msgstr ""
 
 #: wazo_plugind_admin_ui_device_official/form.py:18
 msgid "Switchboard"
-msgstr ""
+msgstr "Panel operatora"
 
 #: wazo_plugind_admin_ui_device_official/form.py:23
 #: wazo_plugind_admin_ui_device_official/templates/device/list.html:13
 msgid "IP"
-msgstr ""
+msgstr "IP"
 
 #: wazo_plugind_admin_ui_device_official/form.py:24
 #: wazo_plugind_admin_ui_device_official/templates/device/list.html:14
 msgid "MAC"
-msgstr ""
+msgstr "MAC"
 
 #: wazo_plugind_admin_ui_device_official/form.py:25
 #: wazo_plugind_admin_ui_device_official/templates/device/list.html:15
 msgid "Model"
-msgstr ""
+msgstr "Model"
 
 #: wazo_plugind_admin_ui_device_official/form.py:26
 #: wazo_plugind_admin_ui_device_official/templates/device/list.html:16
 msgid "Plugin"
-msgstr ""
+msgstr "Wtyczka"
 
 #: wazo_plugind_admin_ui_device_official/form.py:27
 #: wazo_plugind_admin_ui_device_official/templates/device/list.html:17
 msgid "Vendor"
-msgstr ""
+msgstr "Producent"
 
 #: wazo_plugind_admin_ui_device_official/form.py:28
 #: wazo_plugind_admin_ui_device_official/templates/device/list.html:18
 msgid "Version"
-msgstr ""
+msgstr "Wersja"
 
 #: wazo_plugind_admin_ui_device_official/form.py:29
 #: wazo_plugind_admin_ui_device_official/templates/device/list.html:59
 msgid "Status"
-msgstr ""
+msgstr "Status"
 
 #: wazo_plugind_admin_ui_device_official/form.py:30
 #: wazo_plugind_admin_ui_device_official/templates/device/list.html:61
 msgid "Autoprov"
-msgstr ""
+msgstr "Autoprov"
 
 #: wazo_plugind_admin_ui_device_official/form.py:31
 #: wazo_plugind_admin_ui_device_official/templates/device/list.html:60
 msgid "Configured"
-msgstr ""
+msgstr "Skonfigurowany"
 
 #: wazo_plugind_admin_ui_device_official/form.py:32
 #: wazo_plugind_admin_ui_device_official/templates/device/list.html:62
 msgid "Not configured"
-msgstr ""
+msgstr "Nie skonfigurowany"
 
 #: wazo_plugind_admin_ui_device_official/form.py:35
 msgid "Description"
-msgstr ""
+msgstr "Opis"
 
 #: wazo_plugind_admin_ui_device_official/templates/device/edit.html:4
 #: wazo_plugind_admin_ui_device_official/templates/device/list.html:4
 #: wazo_plugind_admin_ui_device_official/templates/device/list.html:9
 #: wazo_plugind_admin_ui_device_official/view.py:24
 msgid "Devices"
-msgstr ""
+msgstr "Urządzenia"
 
 #: wazo_plugind_admin_ui_device_official/view.py:35
 #, python-format
 msgid "%(resource)s: Resource has been reset to autoprov"
-msgstr ""
+msgstr "%(resource)s: Źródło zostało zresetowane do autoprov"
 
 #: wazo_plugind_admin_ui_device_official/view.py:45
 #, python-format
 msgid "%(resource)s: Resource has been synchronized"
-msgstr ""
+msgstr "%(resource)s: Źródło zostało zsynchronizowane"
 
 #: wazo_plugind_admin_ui_device_official/templates/device/edit.html:4
 msgid "edit"
-msgstr ""
+msgstr "edycja"
 
 #: wazo_plugind_admin_ui_device_official/templates/device/edit.html:9
 msgid "Device"
-msgstr ""
+msgstr "Urządzenie"
 
 #: wazo_plugind_admin_ui_device_official/templates/device/edit.html:11
 msgid "Update"
-msgstr ""
+msgstr "Aktualizacja"
 
 #: wazo_plugind_admin_ui_device_official/templates/device/list.html:4
 msgid "List"
-msgstr ""
+msgstr "Lista"
 
 #: wazo_plugind_admin_ui_device_official/templates/device/list.html:42
 msgid "Synchronize device"
-msgstr ""
+msgstr "Synchronizacja urzadzenia"
 
 #: wazo_plugind_admin_ui_device_official/templates/device/list.html:44
 msgid "Are you sure you want to synchronize this device ?"
-msgstr ""
+msgstr "Na pewno chcesz zsynchronizować urządzenie?"
 
 #: wazo_plugind_admin_ui_device_official/templates/device/list.html:50
 msgid "Reset device to autoprov mode"
-msgstr ""
+msgstr "Resetuj urządzenie do trybu autoprov"
 
 #: wazo_plugind_admin_ui_device_official/templates/device/list.html:52
 msgid "Are you sure you want to reset this device ?"
-msgstr ""
+msgstr "Na pewno chcesz zresetować to urządzenie?"
 
 #: wazo_plugind_admin_ui_device_official/templates/device/list.html:65
 msgid "Add Device"
-msgstr ""
+msgstr "Dodaj urzadzenie"
 
 #: wazo_plugind_admin_ui_device_official/templates/device/list.html:67
 msgid "Add"
-msgstr ""
+msgstr "Dodaj"
